@@ -35,13 +35,15 @@ To run this application, you’ll need the following installed on your system:
 ### Installation
 
 1. Clone the repository:
+
     ```bash
-    git clone https://github.com/your-username/image-search-app.git
+    git clone [google-search](https://github.com/Jatin-8898/google-search.git)
     ```
+
 2. Navigate into the project directory:
 
     ```bash
-    cd image-search-app
+    cd google-search
     ```
 
 3. Install dependencies:
