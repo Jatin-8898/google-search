@@ -1,0 +1,30 @@
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 16px;
+	padding: 20px;
+}
+
+.image-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.image-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.image-item:hover {
+	transform: scale(1.05);
+}
+
+.loading {
+	text-align: center;
+}

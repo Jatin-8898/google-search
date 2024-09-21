@@ -1,0 +1,82 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  flex: 3;
+}
+
+.image-card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+}
+
+.popover {
+  position: relative;
+  flex: 1;
+  margin-left: 20px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.popover img {
+  width: 100%;
+  height: auto;
+}
+
+.popover-details {
+  margin-top: 15px;
+}
+
+.close-button {
+  position: static;
+  font-size: 18px;
+  float: right;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .popover {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
